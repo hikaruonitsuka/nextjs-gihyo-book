@@ -16,6 +16,12 @@ module.exports = {
       files: ['*.ts', '*.tsx', '*.js'],
       parser: '@typescript-eslint/parser',
     },
+    {
+      files: ['./jest.config.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
