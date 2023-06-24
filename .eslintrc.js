@@ -9,6 +9,7 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
     'prettier',
+    'plugin:storybook/recommended',
   ],
   overrides: [
     {
@@ -18,6 +19,13 @@ module.exports = {
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
-    'import/order': [2, { alphabetize: { order: 'asc' } }],
+    'import/order': [
+      2,
+      {
+        alphabetize: {
+          order: 'asc',
+        },
+      },
+    ],
   },
 }
